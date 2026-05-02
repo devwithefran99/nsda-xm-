@@ -284,34 +284,10 @@ body {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.mv-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
 
-.mv-card-accent {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-}
-
-.mv-card-accent .mv-icon {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: var(--color-accent);
-}
-
-.mv-card-accent .mv-title {
-  color: var(--color-white);
-}
-
-.mv-card-accent .mv-text {
-  color: rgba(255, 255, 255, 0.85);
-}
 
 .mv-icon {
-  width: 52px;
-  height: 52px;
-  background-color: var(--color-bg-soft);
-  border-radius: var(--radius-sm);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,13 +318,6 @@ body {
   background-color: var(--color-white);
 }
 
-#services-sub {
-  font-size: 0.97rem;
-  color: var(--color-text-muted);
-  max-width: 520px;
-  margin: 0 auto;
-}
-
 .service-card {
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
@@ -358,21 +327,7 @@ body {
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-primary-light);
-}
 
-.service-card-featured {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-}
-
-.service-card-featured .service-icon {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: var(--color-accent);
-}
 
 .service-card-featured .service-title {
   color: var(--color-white);
@@ -383,29 +338,15 @@ body {
 }
 
 .service-icon {
-  width: 56px;
-  height: 56px;
-  background-color: var(--color-bg-soft);
-  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   color: var(--color-primary);
-  margin-bottom: 1.2rem;
-  border: 1px solid var(--color-border);
+  margin-bottom: 10px;
   transition: background-color var(--transition);
 }
 
-.service-card:hover .service-icon {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
-}
-
-.service-card-featured:hover .service-icon {
-  background-color: rgba(255, 255, 255, 0.25);
-}
 
 .service-title {
   font-family: var(--font-heading);
@@ -439,19 +380,6 @@ body {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.feedback-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.feedback-card-accent {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-}
-
-.feedback-card-accent .feedback-stars {
-  color: var(--color-accent);
-}
 
 .feedback-card-accent .feedback-text {
   color: rgba(255, 255, 255, 0.9);
@@ -463,12 +391,6 @@ body {
 
 .feedback-card-accent .feedback-role {
   color: rgba(255, 255, 255, 0.65);
-}
-
-.feedback-card-accent .feedback-avatar {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: var(--color-white);
-  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .feedback-stars {
@@ -639,25 +561,7 @@ body {
   padding: 2.5rem 0;
 }
 
-#footer-brand {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 0.35rem;
-}
 
-#footer-brand i {
-  color: var(--color-accent);
-  margin-right: 0.3rem;
-}
-
-#footer-tagline {
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 0;
-  font-style: italic;
-}
 
 #footer-links {
   list-style: none;
@@ -667,6 +571,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem 1.5rem;
+}
+#main-footer .footer-img img{
+  width: 50px;
 }
 
 #footer-links li a {
@@ -701,11 +608,6 @@ body {
   transition: background-color var(--transition), color var(--transition), border-color var(--transition);
 }
 
-.footer-social-link:hover {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-  color: var(--color-text-dark);
-}
 
 #footer-copy {
   font-size: 0.78rem;
