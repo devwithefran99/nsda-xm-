@@ -704,3 +704,77 @@ body {
     padding: 1.5rem 1.25rem;
   }
 }
+
+/* about css */
+
+
+ 
+    /* 3. SKILLS SECTION */
+    #skills {
+      padding: 80px 0;
+      background: var(--color-white);
+    }
+ 
+    .skill-group-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-text-dark);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--color-bg-soft);
+    }
+ 
+    .skill-bar-wrap {
+      margin-bottom: 1.1rem;
+    }
+ 
+    .skill-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--color-text-body);
+      margin-bottom: 6px;
+    }
+
+ 
+    .skill-bar-track {
+      height: 7px;
+      background: var(--color-bg-soft);
+      border-radius: 99px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+ 
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      background: var(--color-primary-light);
+    }
+    /* Width Classes */
+#skills .width-95 {
+   width: 95%; 
+  }
+#skills .width-90 { 
+  width: 90%; 
+}
+#skills .width-88 { 
+  width: 88%; 
+}
+#skills .width-85 { 
+  width: 85%;
+ }
+
+
+/* Optional hover effect */
+.skill-bar-wrap:hover .skill-bar-fill {
+  filter: brightness(1.1);
+}
+ 
+ 
+    @media (max-width: 767px) {
+      .bio-badge { left: 12px; bottom: 12px; }
+      .bio-photo-placeholder { max-width: 100%; }
+      .stat-number { font-size: 1.7rem; }
+    }
+/* about css ends */
