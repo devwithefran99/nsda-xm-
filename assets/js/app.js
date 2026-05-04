@@ -71,3 +71,63 @@ fadeElements.forEach(function (el) {
   el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
   fadeObserver.observe(el);
 });
+
+// Simple JS to log when sections are in view (Future-ready for animations)
+window.onscroll = function() {
+    let sections = ['personal-info-section', 'education-section', 'experience-section'];
+    
+    sections.forEach(function(id) {
+        let element = document.getElementById(id);
+        let position = element.getBoundingClientRect();
+
+        // Agar section screen e thake, tahole console e bolbe (testing)
+        if(position.top < window.innerHeight && position.bottom >= 0) {
+            console.log(id + " is now visible!");
+            // Ekhane animation class add kora jay
+        }
+    });
+};
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Elements
+    const name = document.getElementById('userName');
+    const email = document.getElementById('userEmail');
+    const message = document.getElementById('userMessage');
+    const successMsg = document.getElementById('success-msg');
+
+    // Simple Flag
+    let isValid = true;
+
+  
+
+    // Email Validation (Basic Regex)
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value)) {
+        document.getElementById('emailError').classList.remove('d-none');
+        isValid = false;
+    } else {
+        document.getElementById('emailError').classList.add('d-none');
+    }
+
+    // Message Validation
+    if (message.value.trim() === "") {
+        document.getElementById('messageError').classList.remove('d-none');
+        isValid = false;
+    } else {
+        document.getElementById('messageError').classList.add('d-none');
+    }
+
+    // Success Action
+    if (isValid) {
+        successMsg.classList.remove('d-none');
+        this.reset(); // Form clear hobe
+        console.log("Form Submitted Successfully!");
+        
+        // Message auto-hide hobe 3 second por
+        setTimeout(() => {
+            successMsg.classList.add('d-none');
+        }, 3000);
+    }
+});

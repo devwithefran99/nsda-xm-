@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. xyz </title>
+
+ <!-- css link starts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/> 
+  <link  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- css link ends here -->
+</head>
+<body>
+
+  <!-- header part starts -->
+<header>
+    <!-- nav starts -->
+<nav id="main-navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img src="./assets/image/doctor logo.jpg" alt="">
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+          <a href="contact.html" id="nav-appointment-btn" class="btn ms-3">Download CV</a>
+      </div>
+    </div>
+  </nav>
+    <!-- nav ends -->
+</header>
+
+  <!-- header part ends  -->
+
+  <!-- ========== HERO CAROUSEL ========== -->
+  <section id="home">
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="4500"
+    >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" id="carousel-slide-1">
+          <div id="carousel-overlay"></div>
+          <div class="carousel-caption">
+            <p id="slide-tagline-1" class="slide-tagline">MBBS · FCPS · xyz</p>
+            <h1 class="slide-heading">Caring for Your Heart</h1>
+            <p class="slide-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#about" class="btn" id="slide-btn-primary">Discover More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" id="carousel-slide-2">
+          <div id="carousel-overlay-2" class="carousel-overlay-shared"></div>
+          <div class="carousel-caption">
+            <p id="slide-tagline-1" class="slide-tagline">MBBS · FCPS · xyz</p>
+            <h1 class="slide-heading">Caring for Your Heart</h1>
+            <p class="slide-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#about" class="btn" id="slide-btn-primary">Discover More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" id="carousel-slide-3">
+          <div class="carousel-overlay-shared"></div>
+          <div class="carousel-caption">
+            <p class="slide-tagline">assgdfs</p>
+            <h1 class="slide-heading">be careful for health</h1>
+            <p class="slide-sub">Trusted by over 12,000 patients</p>
+            <a href="#contact" class="btn" id="slide-btn-tertiary">Book Appointment</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section id="services-section" class="py-5">
+    <div class="container">
+        <h2 id="services-title" class="text-center mb-5">My Services</h2>
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div id="service-card-1" class="service-box p-4 text-center border">
+                    <h4 id="s-title-1">General Consultation</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div id="service-card-2" class="service-box p-4 text-center border">
+                    <h4 id="s-title-2">Cardiology Checkup</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div id="service-card-3" class="service-box p-4 text-center border">
+                    <h4 id="s-title-3">Heart Surgery</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="col-md-4">
+                <div id="service-card-4" class="service-box p-4 text-center border">
+                    <h4 id="s-title-4">Blood Pressure Care</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-md-4">
+                <div id="service-card-5" class="service-box p-4 text-center border">
+                    <h4 id="s-title-5">Emergency Care</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-md-4">
+                <div id="service-card-6" class="service-box p-4 text-center border">
+                    <h4 id="s-title-6">Lab Reports</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section (Bootstrap Accordion) -->
+<section id="faq-section" class="py-5">
+    <div class="container">
+        <h2 id="faq-title" class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="accordion" id="doctorFaqAccordion">
+                    
+                    <!-- Question 1 -->
+                    <div class="accordion-item" id="faq-item-1">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                How can I book an appointment?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#doctorFaqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item" id="faq-item-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Do you provide online consultation?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#doctorFaqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item" id="faq-item-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                What are the visiting hours?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#doctorFaqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="accordion-item" id="faq-item-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                Which hospitals are you affiliated with?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#doctorFaqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="accordion-item" id="faq-item-5">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                Do you accept health insurance?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#doctorFaqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- ========== FOOTER ========== -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 footer-img">
+         <img src="./assets/image/doctor logo.jpg" alt="">
+        </div>
+        <div class="col-md-4 text-center">
+          <ul id="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div id="footer-socials">
+            <a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+          <p id="footer-copy"> 2025 Dr.adcb | All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Link here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <!-- JS Link ends -->
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. xyz </title>
+
+ <!-- css link starts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/> 
+  <link  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- css link ends here -->
+</head>
+<body>
+
+  <!-- header part starts -->
+<header>
+    <!-- nav starts -->
+<nav id="main-navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img src="./assets/image/doctor logo.jpg" alt="">
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+          <a href="contact.html" id="nav-appointment-btn" class="btn ms-3">Download CV</a>
+      </div>
+    </div>
+  </nav>
+    <!-- nav ends -->
+</header>
+
+  <!-- header part ends  -->
+
+  <!-- ========== HERO CAROUSEL ========== -->
+  <section id="home">
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="4500"
+    >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" id="carousel-slide-1">
+          <div id="carousel-overlay"></div>
+          <div class="carousel-caption">
+            <p id="slide-tagline-1" class="slide-tagline">MBBS · FCPS · xyz</p>
+            <h1 class="slide-heading">Caring for Your Heart</h1>
+            <p class="slide-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#about" class="btn" id="slide-btn-primary">Discover More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" id="carousel-slide-2">
+          <div id="carousel-overlay-2" class="carousel-overlay-shared"></div>
+          <div class="carousel-caption">
+            <p id="slide-tagline-1" class="slide-tagline">MBBS · FCPS · xyz</p>
+            <h1 class="slide-heading">Caring for Your Heart</h1>
+            <p class="slide-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#about" class="btn" id="slide-btn-primary">Discover More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" id="carousel-slide-3">
+          <div class="carousel-overlay-shared"></div>
+          <div class="carousel-caption">
+            <p class="slide-tagline">assgdfs</p>
+            <h1 class="slide-heading">be careful for health</h1>
+            <p class="slide-sub">Trusted by over 12,000 patients</p>
+            <a href="#contact" class="btn" id="slide-btn-tertiary">Book Appointment</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Personal Information Section -->
+<section id="personal-info-section" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 mb-4 mb-md-0">
+                <div id="info-image-wrapper">
+                    <img src="./assets/image/man.jpeg" alt="pic" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div id="info-content">
+                    <h2 id="info-title">About Me</h2>
+                    <p id="info-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <p><strong>Name:</strong>xyz</p>
+                            <p><strong>Email:</strong> contact@xyz.com</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p><strong>Phone:</strong> +880 1234 5678</p>
+                            <p>lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="container" id="section-divider">
+
+<!-- Education Section -->
+<section id="education-section" class="py-5">
+    <div class="container">
+        <h2 id="education-title" class="text-center mb-5">Education Background</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div id="edu-card-1" class="education-card">
+                    <h4>MBBS</h4>
+                    <p class="text-muted">Medical College (2010 - 2015)</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="edu-card-2" class="education-card">
+                    <h4>FCPS (asdf)</h4>
+                    <p class="text-muted"> Dhaka (2017 - 2020)</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="edu-card-3" class="education-card">
+                    <h4>MD (xyz)</h4>
+                    <p class="text-muted">BSMMU (2021 - Present)</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience-section" class="py-5">
+    <div class="container">
+        <h2 id="experience-title" class="text-center mb-5">Professional Experience</h2>
+        <div id="experience-list">
+            <div id="exp-item-1" class="experience-box p-4 mb-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 id="exp-date-1">2022 - Present</h5>
+                    </div>
+                    <div class="col-md-9 border-start ps-4">
+                        <h4>Senior Consultant</h4>
+                        <p class="text-primary fw-bold">City Central Hospital</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu pretium ante, sit amet rhoncus purus. Donec non elis at libero.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="exp-item-2" class="experience-box p-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 id="exp-date-2">2018 - 2021</h5>
+                    </div>
+                    <div class="col-md-9 border-start ps-4">
+                        <h4>Medical Officer</h4>
+                        <p class="text-primary fw-bold">General Health Clinic</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu pretium ante, sit amet rhoncus purus. Donec non elis at libero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+   <!-- ========== FOOTER ========== -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 footer-img">
+         <img src="./assets/image/doctor logo.jpg" alt="">
+        </div>
+        <div class="col-md-4 text-center">
+          <ul id="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div id="footer-socials">
+            <a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+          <p id="footer-copy"> 2025 Dr.adcb | All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Link here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <!-- JS Link ends -->
+</body>
+</html>
